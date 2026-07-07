@@ -1,0 +1,15 @@
+# Daily sales
+sales = [1200, 1800, 1500, 2100, 1700]
+
+# Calculate total sales
+total_sales = sum(sales)
+
+# Sales target
+target = 8000
+
+print("Total Sales:", total_sales)
+
+if total_sales >= target:
+    print("🎉 Target Achieved!")
+else:
+    print("📈 Keep pushing to reach the target!")
