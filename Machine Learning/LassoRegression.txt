@@ -25,3 +25,17 @@ y_pred = lasso.predict(X_test)
 mse = mean_squared_error(y_test, y_pred)
 r2 = r2_score(y_test, y_pred)
 mse, r2
+
+y_pred = lasso.predict(X_test)
+
+plt.figure(figsize=(6, 6))
+plt.scatter(y_test, y_pred)
+
+min_val = min(y_test.min(), y_pred.min())
+max_val = max(y_test.max(), y_pred.max())
+plt.plot([min_val, max_val], [min_val, max_val])
+
+plt.xlabel("Actual Values")
+plt.ylabel("Predicted Values")
+plt.title("Actual vs Predicted (Lasso Regression)")
+plt.show()
