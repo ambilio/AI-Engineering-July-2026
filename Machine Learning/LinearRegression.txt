@@ -15,3 +15,6 @@ Y = 3.5 * X + np.random.randn(50, 1) * 20
 
 model = LinearRegression()
 model.fit(X, Y)
+
+model = LinearRegression(fit_intercept=False, copy_X=False, tol=1e-06, n_jobs=None, positive=False)
+model.fit(X, Y)
