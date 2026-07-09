@@ -31,3 +31,6 @@ plt.ylabel('Y')
 plt.legend()
 plt.grid(True)
 plt.show()
+
+print("Slope (Coefficient):", model.coef_[0][0])
+print("Intercept:", model.intercept_[0])
